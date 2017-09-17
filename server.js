@@ -5,20 +5,37 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var article = {
-    title :  'Article One | Waseem Ibrahim',
-    heading:'Article One ',
-    date   : 'sep 17, 2017',
+var articles = {
+          articleOne :{
+        title :  'Article One | Waseem Ibrahim',
+        heading:'Article One ',
+        date   : 'sep 17, 2017',
+        content: ` <p>
+           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
+           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
+           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
+       </p>
+       <p>
+           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
+           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
+           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
+       </p>`},
+            articleTwo :{
+    title :  'Article two | Waseem Ibrahim',
+    heading:'Article Two ',
+    date   : 'sep 20, 2017',
     content: ` <p>
-       this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-       this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-       this is the article one content.this is the article one content.this is the article one content.this is the article one content.
+       this is the article two content.this is the article two content.
    </p>
-   <p>
-       this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-       this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-       this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-   </p>`
+   `},
+    articleThree :{
+    title :  'Article three | Waseem Ibrahim',
+    heading:'Article three ',
+    date   : 'sep 22, 2017',
+    content: ` <p>
+       this is the article three content.this is the article three content.
+   </p>
+   `},
 };       
 function createTemplate (data){
     var title=data.title;
@@ -62,14 +79,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',function (req,res) {
-    res.send(createTemplate(article));
+    res.send(createTemplate(article-one));
 });
 
 app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+  res.send(createTemplate(article-two));
 });
+
 app.get('/article-three',function(req,res) {
-    res.send("Article three is requested and stored here");
+    res.send(createTemplate(article-three));
 });
 
 app.get('/ui/style.css', function (req, res) {
