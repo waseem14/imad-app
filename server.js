@@ -23,7 +23,7 @@ var articleOne ={
 function createTemplate (data){
     
 
-var httpTemplate = `
+var htmlTemplate = `
 <html>
     <head>
         <title>
@@ -51,7 +51,7 @@ var httpTemplate = `
 </html>
     
 `;
-return httpTemplate;
+return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
