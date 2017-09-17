@@ -11,16 +11,12 @@ var articles = {
         heading:'Article One ',
         date   : 'sep 17, 2017',
         content: ` <p>
-           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
+           HI robina how are u...this is a page for created for u.......HAVE FUN
        </p>
-       <p>
-           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-           this is the article one content.this is the article one content.this is the article one content.this is the article one content.
-       </p>`},
-           'article-two' :{
+    `},
+       
+       
+  'article-two' :{
     title :  'Article two | Waseem Ibrahim',
     heading:'Article Two ',
     date   : 'sep 20, 2017',
