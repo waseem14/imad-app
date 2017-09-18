@@ -1,11 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: lightgrey;
-    margin-top: 75px;background-image: url(https://4.bp.blogspot.com/-SXSj-3q1vfE/WKfJkVXf04I/AAAAAAAADdM/6t8UNMJxBPssHA04ne7Fz-PLx7qANQZWwCLcB/s1600/Keerthy-Suresh-Biography-Wiki-Biodata.jpg);
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    height: 100%;
-    width: 100%;
+    margin-top:20px;
 }
 
 .center {
