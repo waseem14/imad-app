@@ -3,7 +3,13 @@ console.log('Loaded!');
 var element=document.getElementById('main-text');
 element.innerHTML="new value";
 //move image
+var moveLeft=0;
+function moveRight(){
+    marginLeft=marginLeft +10;
+    img.style.marginLeft=marginLeft('px');
+}
 var image=document.getElementById('img');
 image.onClick=function(){
-img.style.marginLeft='10px';
+    var interval=setInterval(moveRight,10);
+
 };
