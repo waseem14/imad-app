@@ -5,8 +5,8 @@ element.innerHTML="new value";
 //move image
 var img=document.getElementById('image');
 
-img.onClick=function(){
-    img.style.marginLeft='200px';
+element.onClick=function(){
+    element.style.marginLeft='200px';
     
     
     
