@@ -12,15 +12,15 @@ button.onclick=function(){
     
     //capture the response
     request.onreadystateChange=function(){
-        if(request.readyState===XMLHttpRequet.DONE){
+        if(request.readyState === XMLHttpRequet.DONE){
             //take action
-            if(request.status===200){
+            if(request.status === 200){
                var counter=request.responseText;
                 var span=document.getElementById('count');
                 span.innerHTML=counter.toString();
             }
         }
     };
-    request.open('GET','http://waseem1997.imad.hasura-app.io/counter',true);
+    request.open('GET','https://waseem1997.imad.hasura-app.io/counter',true);
     request.send(null);
 };    
