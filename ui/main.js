@@ -1,13 +1,15 @@
-console.log('Loaded!');
-//change the text of main-text
-var element=document.getElementById('main-text');
-element.innerHTML="new value";
-//move image
-var img=document.getElementById('image');
 
-element.onClick = function(){
-    element.style.marginLeft= "500px";
+//change the text of main-text
+//var element=document.getElementById('main-text');
+//element.innerHTML="new value";
+//move image
+//var img=document.getElementById('image');
+var button=document.getElementById('counter');
+var counter;
+button.onclick=function(){
+    var request=new XMLHttpRequest();
+    counter=counter+1;
     
-    
-    
+ var span=document.getElementById('count');
+ span.innerHTML=counter.toString();
 };
