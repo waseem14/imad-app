@@ -21,6 +21,6 @@ button.onclick=function(){
             }
         }
     };
-    request.open('http://waseem1997.imad.hasura-app.io/counter',true);
+    request.open('GET','http://waseem1997.imad.hasura-app.io/counter',true);
     request.send(null);
 };    
