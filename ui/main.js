@@ -9,8 +9,7 @@ var button=document.getElementById('counter');
 button.onclick=function(){
     //create request
     var request=new XMLHttpRequest();
-    request.open('http://waseem1997.imad.hasura-app.io/counter',true);
-    request.send(null);
+    
     //capture the response
     request.onreadystateChange=function(){
         if(request.readyState==XMLHttpRequet.DONE){
@@ -22,4 +21,6 @@ button.onclick=function(){
             }
         }
     };
+    request.open('http://waseem1997.imad.hasura-app.io/counter',true);
+    request.send(null);
 };    
